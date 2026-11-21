@@ -2,8 +2,24 @@
 
 <html lang="en">
 <head>
-    <meta charset="">
+    <meta charset="UTF-8">
+    <title>Quick Tip Splitter</title>
 </head>
 
+<body>
+    <h1>Tip Splitter</h1>
+    <hr>
+
+    Bill Amount: <input type="number" id="bill" placeholder="Bill Amount (php)"><br><br>
+    Tip: <input type="number" id="tip" placeholder="Tip % (e.g., 15)">
+    <br><br>
+    Number of People: <input type="number" id="people" placeholder="Number of People" value="1">
+    <hr>
+    <button id="calc-btn">Calculate</button>
+
+    <h3>Per Person: PHP<span id="result">0.00</span></h3>
+
+    <script src="computation.js"></script>
+</body>
 
 </html>
