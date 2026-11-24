@@ -10,21 +10,16 @@ let btn10pInput = document.getElementById('btn10p');
 let btn15pInput = document.getElementById('btn15p');
 let btn20pInput = document.getElementById('btn20p');
 
-function tipCalculator(percent){
-    let bill2 = Number(billInput.value);
-    tipInput.value = bill2 * percent;
-};
-
 btn10p.addEventListener('click', function(){
-    tipCalculator(0.1);
+    tipInput.value = 10;
 });
 
 btn15p.addEventListener('click', function(){
-    tipCalculator(0.15);
+    tipInput.value = 15;
 });
 
 btn20p.addEventListener('click', function(){
-    tipCalculator(0.2);
+    tipInput.value = 20;
 });
 
 calcBtn.addEventListener('click', function(){
